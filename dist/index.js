@@ -6059,6 +6059,7 @@ const core = __nccwpck_require__(800);
 const github = __nccwpck_require__(996);
 
 try {
+  console.log('I am running because a PR was closed and merged into master.')
   console.log(`I need to find the releaseID from the PR which triggered this.`);
   // Get the JSON webhook payload for the event that triggered the workflow
   const payload = JSON.stringify(github.context.payload, undefined, 2)
