@@ -1,5 +1,11 @@
 name: 'Deploy Release'
-description: 'Deploy a release'
+description: 'Deploy a balenaCloud release'
+inputs:
+  token:
+    description: 'GITHUB_TOKEN'
+outputs:
+  releaseId:
+    description: 'Id of release that was deployed.'
 runs:
   using: 'node12'
   main: 'dist/index.js'
